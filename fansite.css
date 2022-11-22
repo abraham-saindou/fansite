@@ -24,12 +24,13 @@ img {
     display: flex;
     flex-direction: row;
     align-items: center;
-    font-size: 25px;
+    font-size: 20px;
+    font-family: "My Custom Font", Verdana, Tahoma;
     gap: 20px;
     margin-right: 20px;
 
 }
-.content_video {
+#header {
     background-image: url(./images/1022369.jpg);
     background-size: contain;
     background-repeat: no-repeat;
@@ -40,6 +41,7 @@ img {
     
 }
 #title1 {
+    font-family: "My Custom Font", Verdana, Tahoma;
     font-size: 50px;
     padding-top: 60px;
     text-align: center;
@@ -55,6 +57,61 @@ img {
     animation-duration: 4s;
 
 }
+main {
+    height: 110vh;
+    background-color: grey;
+}
+
+.container_flex{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: 800px;
+    gap: 70px;
+    justify-content: space-around;
+    
+    
+}
+#item1, #item2, #item3 {
+    
+    width: 600px;
+    background-color: azure;
+    border-radius: 20px;
+    margin: 4% 50px 0 50px;
+    
+    
+}
+
+
+   
+#item2 {
+    background-image: url(./images/f8cb65d9f6802ff1a22ba2805e523ef3.jpg);
+    background-size: 101% 100%;
+    background-repeat: no-repeat;
+    
+}
+
+footer {
+    height: 15vh;
+    background-color: black;
+}
+
+/* TAG page */
+
+.tag_header {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+#pic1, #pic2 {
+    height: 100vh;
+    width: 100%;
+}
+
+/* media & animations*/
+
 @keyframes backInUp {
     0% {
       -webkit-transform: translateY(1200px) scale(0.7);
@@ -78,7 +135,4 @@ img {
   @font-face {
       font-family: "My Custom Font";
       src: url(./fonts/doom-eternal-font/EternalLogo-w1572.ttf) format("truetype");
-  }
-  .title1 { 
-      font-family: "My Custom Font", Verdana, Tahoma;
   }
